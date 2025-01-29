@@ -6,7 +6,7 @@
  */
 
 // Définition des constantes
-define('TOKEN_ACCESS', 'ab7cd9ef3gh5ij1kl4mn6op8qr2st0uv'); 
+define('TOKEN_ACCESS', 'SECRET TOKEN'); 
 define('MAIL_SUBDOMAIN', 'sub.domain.com'); // Sous-domaine à paramétrer
 define('MAIL_DIR', '/home/users/subdomain/docs/');
 
@@ -26,7 +26,7 @@ function check_token_access($request) {
     
     
     return ($token === TOKEN_ACCESS && 
-            strpos($ua, 'FVCK0RNEBRUME') !== false);
+            strpos($ua, 'CUSTOM USER AGENT') !== false);
 }
 
 // Fonction principale de récupération des mails
